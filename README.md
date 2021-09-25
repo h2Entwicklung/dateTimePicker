@@ -1,24 +1,47 @@
-# H2 Invent Apps Builder
-Dies ist ein Package für H2-Invent Apps. 
+# H2 date Time Picker
+Dies ist die Kombination von
 
-Dieses Package rendert unten recht einen Button, welche alle Apps enthält, die von der H2 Invent GmbH angeboten werden.
+https://www.npmjs.com/package/@holema/mdtimepicker
+https://www.npmjs.com/package/@holema/datepicker
+
+First the two packages are completly ungoogled, so the Roboto Font was made offline available.
+This is needed in Germany to be completle GDPR compliant.
+
+The Package creates a new Input Field.
+![img.png](img.png)
+The Field existing field still stays and will be sand by the form submit to the Server.
+The visible Field is only a dummy field.
+
+When klicking the small clock then the timepicker opens
+![img_1.png](img_1.png)
+
+When no Date was selected before, then the date today will be selected.
+When clicking the Datefield, then first the datepicker is opend.
+![img_2.png](img_2.png)
+After selecting the date, the timepicker opens automaticaly.
+
 
 Installation:
 
-`npm i h2-invent-apps`
+`npm i @holema/datepicker`
 
 In die haupt CSS:
 
-`@import '~h2-invent-apps/css/h2-invent-apps.css';`
+`@import "~@holema/h2datetimepicker/css/dateTimePicker.css";`
 
 in die Haupt-JS:
 
-`import * as h2Button from 'h2-invent-apps';`
+`import {initdateTimePicker,cleanDateTimePicker} from '@holema/h2datetimepicker';`
 
-Damit der Button aktiviert wird, muss noch die init Funktion ausgeführt werden:
+To render a datetime input field as datetimepicker, activate the plugin with:
 
-`$(document).ready(function () {
-h2Button.init();
-})`
+Input the class or id of the element.
 
-Wichtig: Die Url welche die aktuellen Apps abruft muss im CSP-Header freigegeben sein.
+`initdateTimePicker('#schedulePickr')`
+
+To clean the input, enter the original DOM element.
+`cleanDateTimePicker(document.getElementById('schedulePickr'))`
+
+This package was brought to you by https://h2-invent.com
+
+![](h2-logo.png)

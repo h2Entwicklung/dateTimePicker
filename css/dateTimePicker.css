@@ -1,5 +1,5 @@
-@import "~@holema/datepicker";
-@import "~@holema/mdtimepicker";
+@import "~@holema/datepicker/dist/duDatepicker.css";
+@import "~@holema/mdtimepicker/dist/mdtimepicker.css";
 .mdtimepicker, .dcalendarpicker.dp__open {
     background-color: transparent;
 }

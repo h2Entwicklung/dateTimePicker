@@ -1,5 +1,5 @@
 import duDatepicker from '@holema/datepicker'
-import mdtimepicker from '@holema/timepicker'
+import mdtimepicker from '@holema/mdtimepicker'
 import moment from 'moment'
 
 var dateSave;
