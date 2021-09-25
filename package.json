@@ -6,7 +6,9 @@
     "timepicker",
     "datepicker",
     "material design datepicker",
-    "material design datetimepicker"
+    "material design datetimepicker",
+    "android style timepicker",
+    "android style datepicker"
   ],
   "description": "This is a combination of date and timepicker",
   "main": "js/dateTimePicker.js",
