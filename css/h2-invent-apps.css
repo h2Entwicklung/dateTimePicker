@@ -1,0 +1,106 @@
+.h2-invent-apps_float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    z-index:1000;
+    animation: bot-to-top 2s ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .h2-invent-apps_float{
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+    #h2-invent-apps_floatingList{
+        right: 20px!important;
+        bottom: 60px!important;
+    }
+}
+
+#h2-invent-apps_floatingList{
+    position:fixed;
+    right:40px;
+    bottom:100px;
+    z-index:100;
+    background-color: white;
+    -webkit-box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21) ;
+    box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
+    padding: 8px;
+}
+
+#h2-invent-apps_floatingList li{
+    list-style:none;
+    margin-bottom: 10px;
+}
+
+#h2-invent-apps_floatingList li a{
+    background-color:#e3001b;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    width:60px;
+    height:60px;
+}
+
+.h2-invent-apps_my_float{
+    font-size:24px;
+    margin-top:18px;
+}
+
+.h2-invent-apps-hidden{
+    visibility: hidden;
+    animation: scale-out 0.5s;
+}
+
+.h2-invent-apps-visible {
+    visibility: visible!important;
+    animation: scale-in 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes scale-out {
+    from {transform: scale(1);opacity: 1;}
+    to {transform: scale(0);opacity: 0;}
+}
+
+.h2-invent-apps_text{
+    padding-right: 8px;
+}
+
+.h2-invent-apps_list{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#h2-invent-apps_menue a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#h2-invent-apps_menue img{
+    height: 50%;
+    width: auto;
+    filter: invert(1);
+}
