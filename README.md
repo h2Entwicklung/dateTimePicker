@@ -8,16 +8,16 @@ First the two packages are completly ungoogled, so the Roboto Font was made offl
 This is needed in Germany to be completle GDPR compliant.
 
 The Package creates a new Input Field.
-![img.png](img.png)
+![img.png](https://imgur.com/ydE1plD)
 The Field existing field still stays and will be sand by the form submit to the Server.
 The visible Field is only a dummy field.
 
 When klicking the small clock then the timepicker opens
-![img_1.png](img_1.png)
+![img_1.png](https://imgur.com/mswlHZH)
 
 When no Date was selected before, then the date today will be selected.
 When clicking the Datefield, then first the datepicker is opend.
-![img_2.png](img_2.png)
+![img_2.png](https://imgur.com/jXaIpPj)
 After selecting the date, the timepicker opens automaticaly.
 
 
@@ -44,4 +44,4 @@ To clean the input, enter the original DOM element.
 
 This package was brought to you by https://h2-invent.com
 
-![](h2-logo.png)
+![](https://imgur.com/LxTvCbV)
