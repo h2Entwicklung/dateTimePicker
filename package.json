@@ -1,6 +1,6 @@
 {
   "name": "@holema/h2datetimepicker",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "description": "This is a combination of date and timepicker",
   "main": "js/dateTimePicker.js",
   "scripts": {
