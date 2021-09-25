@@ -1,5 +1,5 @@
 {
-  "name": "@holema/h2-DateTimePicker",
+  "name": "@holema/h2DateTimePicker",
   "version": "1.0.0",
   "description": "This is a combination of date and timepicker",
   "main": "js/dateTimePicker.js",
@@ -12,9 +12,9 @@
     "email": "entwicklung@h2-invent.com"
   },
   "repository": "https://github.com/h2Entwicklung/dateTimePicker.git",
-
   "dependencies": {
     "@holema/datepicker": "^1.0.0",
-    "@holema/mdtimepicker": "^1.1.0"
+    "@holema/mdtimepicker": "^1.1.0",
+    "moment": "^2.29.1"
   }
 }

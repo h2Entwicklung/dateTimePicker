@@ -1,0 +1,13 @@
+@import "~@holema/datepicker";
+@import "~@holema/mdtimepicker";
+.mdtimepicker, .dcalendarpicker.dp__open {
+    background-color: transparent;
+}
+.mdtimepicker, .dcalendarpicker{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.mdtp__wrapper, .dudp__wrapper{
+    bottom: unset!important;
+}
