@@ -1,1 +1,18 @@
 theme: jekyll-theme-cayman
+title: JS Date Time Picker
+author: H2 Invent GmbH
+
+# --- List of links in the navigation bar --- #
+
+navbar-links:
+  About Me: "https://h2-invent.com"
+  Resources:
+    - DateTimePicker: "https://github.com/h2Entwicklung/dateTimePicker"
+    - Demo: "https://codepen.io/h2entwicklung/pen/abwQvPz?editors=1111"
+  Author's home: "https://h2-invent.com"
+
+# --- Logo --- #
+
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+avatar: "https://h2-invent.com/themes/h2-invent/assets/images/H2-invent.png"
