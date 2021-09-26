@@ -16,3 +16,7 @@ navbar-links:
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
 avatar: "https://h2-invent.com/themes/h2-invent/assets/images/H2-invent.png"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap

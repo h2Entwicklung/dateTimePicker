@@ -1,14 +1,14 @@
-# H2 date Time Picker
+# JS DateTime Picker
 This is a combination of
 
-https://www.npmjs.com/package/@holema/mdtimepicker
-https://www.npmjs.com/package/@holema/datepicker
+[https://www.npmjs.com/package/@holema/mdtimepicker](https://www.npmjs.com/package/@holema/mdtimepicker)
+[https://www.npmjs.com/package/@holema/datepicker](https://www.npmjs.com/package/@holema/mdtimepicker)
 
 First the two packages are completly ungoogled, so the Roboto Font was made offline available.
 This is needed in Germany to be completle GDPR compliant.
 
 ## Demo
-https://codepen.io/h2entwicklung/pen/abwQvPz
+[https://codepen.io/h2entwicklung/pen/abwQvPz](https://www.npmjs.com/package/@holema/mdtimepicker)
 
 
 The Package creates a new Input Field.
@@ -48,6 +48,6 @@ Input the class or id of the element.
 To clean the input, enter the original DOM element.
 `cleanDateTimePicker(document.getElementById('schedulePickr'))`
 
-This package was brought to you by https://h2-invent.com
+This package was brought to you by [https://h2-invent.com](https://h2-invent.com)
 
-![](https://imgur.com/LxTvCbV.png)
+![https://h2-invent.com](https://imgur.com/LxTvCbV.png)
