@@ -1,5 +1,5 @@
 # H2 date Time Picker
-Dies ist die Kombination von
+This is a combination of
 
 https://www.npmjs.com/package/@holema/mdtimepicker
 https://www.npmjs.com/package/@holema/datepicker
