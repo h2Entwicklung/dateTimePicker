@@ -27,15 +27,15 @@ After selecting the date, the timepicker opens automaticaly.
 
 
 
-Installation:
+## Installation:
 
 `npm i @holema/datepicker`
 
-In die haupt CSS:
+In the main CSS
 
 `@import "~@holema/h2datetimepicker/css/dateTimePicker.css";`
 
-in die Haupt-JS:
+in the main JS
 
 `import {initdateTimePicker,cleanDateTimePicker} from '@holema/h2datetimepicker';`
 
