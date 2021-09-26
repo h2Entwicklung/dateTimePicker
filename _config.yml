@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
-title: JS Date Time Picker
+title: JS DateTime Picker
 author: H2 Invent GmbH
 
 # --- List of links in the navigation bar --- #
@@ -9,6 +9,7 @@ navbar-links:
   Resources:
     - DateTimePicker: "https://github.com/h2Entwicklung/dateTimePicker"
     - Demo: "https://codepen.io/h2entwicklung/pen/abwQvPz?editors=1111"
+    - NPM: "https://www.npmjs.com/package/@holema/h2datetimepicker"
   Author's home: "https://h2-invent.com"
 
 # --- Logo --- #

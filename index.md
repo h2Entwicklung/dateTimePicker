@@ -2,13 +2,13 @@
 This is a combination of
 
 [https://www.npmjs.com/package/@holema/mdtimepicker](https://www.npmjs.com/package/@holema/mdtimepicker)
-[https://www.npmjs.com/package/@holema/datepicker](https://www.npmjs.com/package/@holema/mdtimepicker)
+[https://www.npmjs.com/package/@holema/datepicker](https://www.npmjs.com/package/@holema/datepicker)
 
 First the two packages are completly ungoogled, so the Roboto Font was made offline available.
 This is needed in Germany to be completle GDPR compliant.
 
 ## Demo
-[https://codepen.io/h2entwicklung/pen/abwQvPz](https://www.npmjs.com/package/@holema/mdtimepicker)
+[https://codepen.io/h2entwicklung/pen/abwQvPz](https://codepen.io/h2entwicklung/pen/abwQvPz)
 
 
 The Package creates a new Input Field.
