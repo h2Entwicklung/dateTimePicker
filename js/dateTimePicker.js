@@ -27,7 +27,6 @@ function initdateTimePicker($element, $optionsL = {
         //here we create the new input field
         var $input = document.createElement("input");
         $input.type = "text";
-        $input.readOnly = true;
         $input.placeholder = $ele[$i].placeholder
         $input.style.display = 'block';
         $input.style.cursor = 'pointer';
@@ -138,7 +137,8 @@ function initTimePicker($input) {
         }
     })
     if ($input.closest('.input-group').querySelector('.original').value === '') {
-        mdtimepicker($input, 'setValue', moment().format('HH:mm'));
+        var $time= moment().add(1,'hour').startOf('hour');
+        mdtimepicker($input, 'setValue', $time.format('HH:mm'));
     } else {
         mdtimepicker($input, 'setValue', moment($input.closest('.input-group').querySelector('.original').value).format('HH:mm'));
     }
