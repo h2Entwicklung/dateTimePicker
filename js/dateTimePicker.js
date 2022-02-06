@@ -66,7 +66,7 @@ function initdateTimePicker($element, $optionsL = {
 
             initTimePicker(this.closest('.input-group').querySelector('.dateTimePicker_h2'));
         })
-        btnWrapper.appendChild(btn);
+
         var btn2 = document.createElement('button');
         btn2.classList.add('btn');
         btn2.classList.add('btn-md');
@@ -82,6 +82,7 @@ function initdateTimePicker($element, $optionsL = {
             duDatepicker(this.closest('.input-group').querySelector('.dateTimePicker_h2'), 'show');
         })
         btnWrapper.appendChild(btn2);
+        btnWrapper.appendChild(btn);
         group.appendChild(btnWrapper);
         group.appendChild($input);
         var parent = $ele[$i].parentNode;
