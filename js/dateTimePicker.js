@@ -13,6 +13,9 @@ function initdateTimePicker($element, $optionsL = {
     enableTime: true,
     time_24hr: true,
     minDate: "today",
+    language : 'de',
+    format: 'dd.mm.yyyy',
+    auto:true
 }) {
     $options = $optionsL;
     var $name = $element.slice(1);
@@ -27,7 +30,8 @@ function initdateTimePicker($element, $optionsL = {
         //here we create the new input field
         var $input = document.createElement("input");
         $input.type = "text";
-        $input.placeholder = $ele[$i].placeholder
+        $input.setAttribute('data-mindate',$ele[$i].hasAttribute('data-mindate')?$ele[$i].getAttribute('data-mindate'):'today');
+        $input.placeholder = $ele[$i].placeholder;
         $input.style.display = 'block';
         $input.style.cursor = 'pointer';
         for (var $c = 0; $c < $ele[$i].classList.length; $c++) {
@@ -90,14 +94,19 @@ function initdateTimePicker($element, $optionsL = {
         group.insertBefore($ele[$i],btnWrapper);
         parent.insertBefore(group, $before);
     }
-    initDatePicker();
+    initDatePicker($optionsL);
     //first we let the people select the date
 
 }
 
-function initDatePicker() {
+function initDatePicker($optionsL = {
+    language : 'de',
+    minDate: "today",
+    format: 'dd.mm.yyyy',
+    auto:true
+}) {
     duDatepicker('.dateTimePicker_h2', {
-        i18n: 'de', format: 'dd.mm.yyyy', auto: true, minDate: 'today',
+        i18n: $optionsL.language, format: $optionsL.format, auto: $optionsL.auto, minDate: $optionsL.minDate,
         events: {
             dateChanged(data, datepicker) {
                 dateSave = moment(data._date).format('YYYY-MM-DD')
