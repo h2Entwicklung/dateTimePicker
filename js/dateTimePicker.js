@@ -46,17 +46,10 @@ function initdateTimePicker($element, $optionsL = {
         group.classList.add('input-group');
         group.classList.add('mb-3');
         //here we create the button group
-        var btnWrapper = document.createElement('div');
-        btnWrapper.classList.add('input-group-prepend');
         //here we create the clock button
         var btn = document.createElement('button');
         btn.classList.add('btn');
-        btn.classList.add('btn-md');
         btn.classList.add('btn-outline-primary');
-        btn.classList.add('m-0');
-        btn.classList.add('px-3');
-        btn.classList.add('py-2');
-        btn.classList.add('z-depth-0');
         btn.classList.add('waves-effect');
         btn.type = 'button';
         btn.innerHTML = '<i class="far fa-clock"></i>';
@@ -73,25 +66,20 @@ function initdateTimePicker($element, $optionsL = {
 
         var btn2 = document.createElement('button');
         btn2.classList.add('btn');
-        btn2.classList.add('btn-md');
         btn2.classList.add('btn-outline-primary');
-        btn2.classList.add('m-0');
-        btn2.classList.add('px-3');
-        btn2.classList.add('py-2');
-        btn2.classList.add('z-depth-0');
         btn2.classList.add('waves-effect');
         btn2.type = 'button';
         btn2.innerHTML = '<i class="fas fa-calendar-day"></i>';
         btn2.addEventListener('click', function () {
             duDatepicker(this.closest('.input-group').querySelector('.dateTimePicker_h2'), 'show');
         })
-        btnWrapper.appendChild(btn2);
-        btnWrapper.appendChild(btn);
-        group.appendChild(btnWrapper);
+
+        group.appendChild(btn2);
+        group.appendChild(btn);
         group.appendChild($input);
         var parent = $ele[$i].parentNode;
         var $before = $ele[$i].nextSibling;
-        group.insertBefore($ele[$i],btnWrapper);
+        group.insertBefore($ele[$i],btn2);
         parent.insertBefore(group, $before);
     }
     initDatePicker($optionsL);
