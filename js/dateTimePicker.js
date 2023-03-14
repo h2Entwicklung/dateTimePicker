@@ -79,7 +79,7 @@ function initdateTimePicker($element, $optionsL = {
         group.appendChild($input);
         var parent = $ele[$i].parentNode;
         var $before = $ele[$i].nextSibling;
-        group.insertBefore($ele[$i],btn2);
+        group.insertBefore($ele[$i],$input);
         parent.insertBefore(group, $before);
     }
     initDatePicker($optionsL);
